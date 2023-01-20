@@ -1,0 +1,4 @@
+:host:not(:first-of-type){ /*Veya ilk eleman harici diğer elemanlara uygulanması için..*/
+    display : block; /*Birden fazladivider varsa ilkine uygulama..*/
+    margin-top: 20px;
+}

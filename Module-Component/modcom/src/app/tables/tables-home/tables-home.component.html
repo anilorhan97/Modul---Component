@@ -1,0 +1,25 @@
+<app-divider>
+    Memnuniyet Anketi
+</app-divider>
+<app-table></app-table>
+
+
+<app-divider>
+    Ekstra Bilgiler
+</app-divider>
+
+<app-tabs> <!--Daha sonra dinamik olarak değiştirebilmek için bu şekilde ngcontent ile yapıldı.-->
+    <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}" class="item"> <!--Olduğu yerde sekmesi için ./ eklenir.-->
+        Sertifikalar <!--exact true : var olan doğru olduğu sürece bu active classı ver anlamına gelir. -->
+        <!--localhost:58811/tables/partners linki de /tables'i içerdiği için sertifikalar hep active gözükürdü. routerLinkActiveOptions ile engellendi.-->
+      </a>
+      <a routerLink="./companies" routerLinkActive="active" class="item">
+        Yabancı Dil
+      </a>
+      <a routerLink="./partners" routerLinkActive="active" class="item">
+        Mezun Olduğu Okul
+      </a>
+</app-tabs>
+
+
+ 
